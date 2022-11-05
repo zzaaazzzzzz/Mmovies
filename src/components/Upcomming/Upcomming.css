@@ -1,0 +1,102 @@
+.upcome {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+}
+.headings {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.headings a {
+  color: #e50813;
+}
+.cont {
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.MoviesBox {
+  position: relative;
+  margin: 5px 30px;
+  margin-bottom: 50px;
+}
+.Image img {
+  position: relative;
+  height: 490px;
+  width: 350px;
+}
+.dait {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  z-index: 109;
+}
+.Image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 490px;
+  z-index: 88;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+.dait h3 {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.dait p {
+  padding: 10px 0px;
+}
+@media screen and (max-width: 676px) {
+  .headings {
+    padding-top: 20px;
+    font-size: 12px;
+  }
+  .Image img {
+    position: relative;
+    height: 200px;
+    width: 150px;
+  }
+  .dait {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 109;
+    font-size: 9px;
+  }
+  .dait h3 {
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .Image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 200px;
+    z-index: 88;
+    background-image: linear-gradient(
+      to left bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    );
+  }
+}
