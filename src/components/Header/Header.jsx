@@ -30,7 +30,7 @@ const Header = () => {
             </ul>
 
             <button className="toggel" onClick={() => setMobile(!mobile)}>
-              {mobile ? <FaTimes /> : <GoThreeBars />}
+              {mobile ? <FaTimes style={{ fontSize: '16px' }} /> : <GoThreeBars style={{ fontSize: '16px' }} />}
             </button>
             <div className="acount flexSB">
               <i>
